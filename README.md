@@ -1,1 +1,1 @@
-#ThinleyPhuntsho.github.io
+thinleyphuntsho.github.io
