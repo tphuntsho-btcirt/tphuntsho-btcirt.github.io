@@ -453,22 +453,19 @@ a:visited {
 
 
 
-
-
 @media print {
   body {
     display: block !important;
     font-size: 12pt !important;
+    margin: 0 !important;
   }
 
-  .sidebar {
-    position: relative !important;
-    width: 26rem !important;
+  .sidebar, .sidebar.active {
+    position: static !important;
+    width: 100% !important;
+    float: none !important;
     height: auto !important;
-    padding: 2rem !important;
-    display: block !important;
-    float: left !important;
-    writing-mode: horizontal-tb !important;
+    padding: 1rem !important;
   }
 
   .sidebar .profile,
@@ -477,7 +474,6 @@ a:visited {
     display: block !important;
     width: 100% !important;
     text-align: left !important;
-    writing-mode: horizontal-tb !important;
   }
 
   .sidebar .profile .name,
@@ -495,26 +491,30 @@ a:visited {
     display: block !important;
     position: static !important;
     white-space: normal !important;
-    padding: 0 !important;
     font-size: 1.2rem !important;
+    padding: 0 !important;
   }
 
-  .sidebar .social-media i {
-    display: inline-block !important;
-    margin-right: 0.5rem !important;
-  }
-
-  .sidebar #btn {
+  .sidebar i, .main-content i {
     display: none !important;
   }
 
   .main-content {
-    margin-left: 0 !important;
     width: 100% !important;
-    float: none !important;
+    display: block !important;
+    margin-left: 0 !important;
   }
 
-  i.bx {
-    display: none !important;
+  .main-content .cv-item,
+  .main-content .cv-item-content,
+  .main-content .cv-item-content .wrapper {
+    display: block !important;
   }
 }
+
+
+
+
+
+
+
