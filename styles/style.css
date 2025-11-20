@@ -459,10 +459,10 @@ a:visited {
   body {
     font-size: 12pt !important;
     margin: 0 !important;
-    display: block !important; /* stacked layout */
+    display: block !important; /* stack layout */
   }
 
-  /* Sidebar on top */
+  /* Sidebar full-width on top */
   .sidebar, .sidebar.active {
     position: relative !important;
     width: 100% !important;
@@ -471,7 +471,7 @@ a:visited {
     display: block !important;
   }
 
-  /* Profile horizontal */
+  /* Profile: horizontal text */
   .sidebar .profile {
     display: flex !important;
     flex-direction: row !important;
@@ -501,7 +501,6 @@ a:visited {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
-    justify-content: start !important;
     gap: 1rem !important;
     margin-top: 1rem !important;
   }
@@ -527,16 +526,12 @@ a:visited {
     margin-top: 1rem !important;
   }
 
-  .sidebar i {
-    display: inline-block !important;
-  }
-
-  /* Main content */
+  /* Main content below sidebar */
   .main-content {
     width: 100% !important;
     margin-left: 0 !important;
     display: block !important;
-    padding: 0 !important;
+    padding: 1rem 0 0 0 !important;
   }
 
   .main-content .cv-item,
@@ -552,9 +547,7 @@ a:visited {
     padding-left: 1.6rem !important;
   }
 
-  /* Hide decorative icons */
   .main-content i {
     display: none !important;
   }
 }
-
