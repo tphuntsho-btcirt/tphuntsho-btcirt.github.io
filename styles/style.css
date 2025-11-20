@@ -446,3 +446,83 @@ a:visited {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
+
+@media print {
+  body {
+    display: block !important;
+  }
+
+  .sidebar {
+    position: relative !important;
+    width: 26rem !important;       /* expand sidebar */
+    height: auto !important;
+    padding: 2rem !important;
+    display: block !important;
+  }
+
+  .sidebar .profile,
+  .sidebar .personal-info,
+  .sidebar .social-media {
+    display: block !important;
+    width: 100% !important;
+    writing-mode: horizontal-tb !important;  /* force horizontal text */
+    text-align: left !important;
+  }
+
+  .sidebar .profile .name {
+    writing-mode: horizontal-tb !important;
+    font-size: 2rem !important;
+    text-align: left !important;
+    margin: 1rem 0 !important;
+    display: block !important;
+  }
+
+  .sidebar .profile .position {
+    display: block !important;
+    font-size: 1.2rem !important;
+    color: #000 !important;
+    background: none !important;
+    text-align: left !important;
+  }
+
+  .sidebar .personal-info .property {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+
+  .sidebar .personal-info .property .property-name {
+    display: block !important;
+    position: static !important;
+    white-space: normal !important;
+    width: auto !important;
+    padding: 0 !important;
+  }
+
+  .sidebar .social-media {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    font-size: 2rem !important;
+  }
+
+  .sidebar #btn {
+    display: none !important;  /* hide hamburger */
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  i.bx {
+    display: none !important; /* optional: hide icons */
+  }
+}
