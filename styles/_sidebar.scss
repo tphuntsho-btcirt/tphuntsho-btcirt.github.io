@@ -194,4 +194,62 @@
             flex-direction: row;
         }
     }
+
 }
+
+@media print {
+  body {
+    display: block !important;
+  }
+
+  .sidebar {
+    position: relative !important;   // remove fixed positioning
+    width: 100% !important;          // expand sidebar to full width
+    height: auto !important;
+    padding: 2rem 1rem !important;
+    display: block !important;
+  }
+
+  .sidebar .profile,
+  .sidebar .personal-info,
+  .sidebar .social-media {
+    display: block !important;
+    width: 100% !important;
+    writing-mode: unset !important;
+    text-align: left !important;
+  }
+
+  .sidebar .profile .name {
+    font-size: 2rem !important;
+  }
+
+  .sidebar .profile .position {
+    display: block !important;
+  }
+
+  .sidebar .personal-info .property .property-name {
+    display: inline !important;
+    position: static !important;
+    padding: 0.2rem 0 !important;
+  }
+
+  .sidebar .social-media {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    font-size: 2rem !important;
+  }
+
+  .sidebar #btn {
+    display: none !important; // hide hamburger in PDF
+  }
+
+  .main-content {
+    margin-left: 0 !important; // remove spacing for PDF
+    width: 100% !important;
+  }
+
+  i.bx {
+    display: none !important; // optional: hide icons for clean PDF
+  }
+}
+
