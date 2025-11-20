@@ -527,3 +527,81 @@ a:visited {
     display: none !important;
   }
 }
+
+
+
+
+
+
+
+@media print {
+  body {
+    display: block !important;
+    font-size: 12pt !important;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: relative !important;
+    width: 26rem !important;
+    height: auto !important;
+    padding: 1rem !important;
+    display: block !important;
+    float: left !important;
+    writing-mode: horizontal-tb !important;
+  }
+
+  /* Profile */
+  .sidebar .profile,
+  .sidebar .personal-info,
+  .sidebar .social-media {
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .sidebar .profile .name,
+  .sidebar .profile .position {
+    display: block !important;
+    writing-mode: horizontal-tb !important;
+    text-align: left !important;
+    font-size: 1.5rem !important;
+    margin: 0.5rem 0 !important;
+    color: black !important;
+    background: none !important;
+  }
+
+  /* Personal info properties */
+  .sidebar .personal-info .property,
+  .sidebar .personal-info .property .property-name {
+    display: block !important;
+    position: static !important;
+    white-space: normal !important;
+    padding: 0 !important;
+    font-size: 1.2rem !important;
+  }
+
+  /* Social media icons */
+  .sidebar .social-media i {
+    display: inline-block !important;
+    margin-right: 0.5rem !important;
+  }
+
+  /* Remove hamburger */
+  .sidebar #btn {
+    display: none !important;
+  }
+
+  /* Main content */
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+    float: none !important;
+  }
+
+  /* Hide decorative icons */
+  i.bx {
+    display: none !important;
+  }
+}
+
