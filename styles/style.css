@@ -457,32 +457,33 @@ a:visited {
     display: block !important;
   }
 
-  /* Sidebar on top */
   .sidebar, .sidebar.active {
     position: relative !important;
     width: 100% !important;
     height: auto !important;
     padding: 1rem !important;
-    float: none !important;
     display: block !important;
   }
 
-  /* Profile section horizontal */
+  /* Force profile section to horizontal row */
   .sidebar .profile {
     display: flex !important;
+    flex-direction: row !important;
     align-items: center !important;
     gap: 1rem !important;
-    flex-wrap: nowrap !important;
-    writing-mode: horizontal-tb !important;
     margin-bottom: 1rem !important;
+    writing-mode: horizontal-tb !important;
   }
 
+  /* Profile image fixed size */
   .sidebar .profile img {
     width: 5rem !important;
     height: 5rem !important;
     border-width: 2px !important;
+    flex-shrink: 0;
   }
 
+  /* Name next to image */
   .sidebar .profile .name {
     writing-mode: horizontal-tb !important;
     text-align: left !important;
@@ -490,8 +491,10 @@ a:visited {
     font-weight: 700 !important;
     margin: 0 !important;
     display: block !important;
+    line-height: 1.2 !important;
   }
 
+  /* Position title below name */
   .sidebar .profile .position {
     writing-mode: horizontal-tb !important;
     text-align: left !important;
@@ -500,7 +503,7 @@ a:visited {
     display: block !important;
   }
 
-  /* Personal info block */
+  /* Personal info */
   .sidebar .personal-info {
     display: block !important;
     margin-top: 1rem !important;
@@ -532,12 +535,7 @@ a:visited {
     display: inline-block !important;
   }
 
-  /* Hide icons in main content */
-  .main-content i {
-    display: none !important;
-  }
-
-  /* Main content block layout */
+  /* Main content layout for print */
   .main-content {
     width: 100% !important;
     margin-left: 0 !important;
@@ -553,12 +551,9 @@ a:visited {
     padding: 0 !important;
   }
 
-  /* Remove left border on items for print */
   .main-content .cv-item-content {
     border-left: none !important;
     padding-left: 0 !important;
   }
 }
-
-
 
